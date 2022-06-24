@@ -14,13 +14,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <EditText
-            android:id="@+id/EditText_Num"
+        <TextView
+            android:id="@+id/textView_Num"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:gravity="right"
-            android:text="TextView"
             android:textSize="34sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -32,20 +31,20 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="200dp"
             android:gravity="right"
-            android:text="TextView"
             android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageView_erase"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginTop="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView_result"
-            app:srcCompat="@drawable/earse" />
+            app:srcCompat="@drawable/earse"
+            android:onClick="eraseButtonClicked"/>
 
         <View
             android:id="@+id/view"
@@ -56,7 +55,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/imageView_erase" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TableLayout
@@ -82,7 +81,8 @@
                 android:background="@drawable/button_custom"
                 android:text="C"
                 android:textColor="#F44336"
-                android:textSize="34sp" />
+                android:textSize="34sp"
+                android:onClick="clearButtonClicked"/>
 
             <Button
                 android:id="@+id/button_bracket"
@@ -93,7 +93,8 @@
                 android:background="@drawable/button_custom"
                 android:text="( )"
                 android:textColor="#8BC34A"
-                android:textSize="34sp" />
+                android:textSize="34sp"
+                android:onClick="buttonClicked"/>
 
             <Button
                 android:id="@+id/button_mod"
@@ -104,7 +105,8 @@
                 android:background="@drawable/button_custom"
                 android:text="%"
                 android:textColor="#8BC34A"
-                android:textSize="34sp" />
+                android:textSize="34sp"
+                android:onClick="buttonClicked" />
 
             <Button
                 android:id="@+id/button_div"
@@ -115,7 +117,8 @@
                 android:background="@drawable/button_custom"
                 android:text="÷"
                 android:textColor="#8BC34A"
-                android:textSize="34sp" />
+                android:textSize="34sp"
+                android:onClick="buttonClicked" />
 
         </TableRow>
 
@@ -131,7 +134,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/button_custom"
                 android:text="7"
-                android:textSize="34sp" />
+                android:textSize="34sp"
+                android:onClick="buttonClicked" />
 
             <Button
                 android:id="@+id/button_8"
@@ -141,7 +145,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/button_custom"
                 android:text="8"
-                android:textSize="34sp" />
+                android:textSize="34sp"
+                android:onClick="buttonClicked" />
 
             <Button
                 android:id="@+id/button_9"
@@ -151,7 +156,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/button_custom"
                 android:text="9"
-                android:textSize="34sp" />
+                android:textSize="34sp"
+                android:onClick="buttonClicked" />
 
             <Button
                 android:id="@+id/button_mul"
@@ -162,7 +168,8 @@
                 android:background="@drawable/button_custom"
                 android:text="X"
                 android:textColor="#8BC34A"
-                android:textSize="34sp" />
+                android:textSize="34sp"
+                android:onClick="buttonClicked" />
 
         </TableRow>
 
@@ -178,7 +185,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/button_custom"
                 android:text="4"
-                android:textSize="34sp" />
+                android:textSize="34sp"
+                android:onClick="buttonClicked" />
 
             <Button
                 android:id="@+id/button_5"
@@ -188,7 +196,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/button_custom"
                 android:text="5"
-                android:textSize="34sp" />
+                android:textSize="34sp"
+                android:onClick="buttonClicked" />
 
             <Button
                 android:id="@+id/button_6"
@@ -198,7 +207,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/button_custom"
                 android:text="6"
-                android:textSize="34sp" />
+                android:textSize="34sp"
+                android:onClick="buttonClicked" />
 
             <Button
                 android:id="@+id/button_min"
@@ -209,7 +219,8 @@
                 android:background="@drawable/button_custom"
                 android:text="-"
                 android:textColor="#8BC34A"
-                android:textSize="34sp" />
+                android:textSize="34sp"
+                android:onClick="buttonClicked" />
 
         </TableRow>
 
@@ -225,7 +236,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/button_custom"
                 android:text="1"
-                android:textSize="34sp" />
+                android:textSize="34sp"
+                android:onClick="buttonClicked" />
 
             <Button
                 android:id="@+id/button_2"
@@ -235,7 +247,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/button_custom"
                 android:text="2"
-                android:textSize="34sp" />
+                android:textSize="34sp"
+                android:onClick="buttonClicked" />
 
             <Button
                 android:id="@+id/button_3"
@@ -245,7 +258,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/button_custom"
                 android:text="3"
-                android:textSize="34sp" />
+                android:textSize="34sp"
+                android:onClick="buttonClicked" />
 
             <Button
                 android:id="@+id/button_pul"
@@ -256,7 +270,8 @@
                 android:background="@drawable/button_custom"
                 android:text="+"
                 android:textColor="#8BC34A"
-                android:textSize="34sp" />
+                android:textSize="34sp"
+                android:onClick="buttonClicked" />
 
         </TableRow>
 
@@ -271,7 +286,8 @@
                 android:layout_margin="7dp"
                 android:layout_weight="1"
                 android:background="@drawable/button_custom"
-                android:text="흠"
+                android:onClick="buttonClicked"
+                android:text="."
                 android:textSize="34sp" />
 
             <Button
@@ -282,7 +298,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/button_custom"
                 android:text="0"
-                android:textSize="34sp" />
+                android:textSize="34sp"
+                android:onClick="buttonClicked" />
 
             <Button
                 android:id="@+id/button_dot"
@@ -292,7 +309,8 @@
                 android:layout_weight="1"
                 android:background="@drawable/button_custom"
                 android:text="."
-                android:textSize="34sp" />
+                android:textSize="34sp"
+                android:onClick="buttonClicked" />
 
             <Button
                 android:id="@+id/button_result"
@@ -303,7 +321,8 @@
                 android:background="@drawable/button_custom"
                 android:text="="
                 android:textColor="#8BC34A"
-                android:textSize="34sp" />
+                android:textSize="34sp"
+                android:onClick="resultButtonClicked" />
 
         </TableRow>
 
